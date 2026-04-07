@@ -1,0 +1,11 @@
+# STAR S.H.I.P.
+## Problem Statement
+
+As implementers of the STAR program, the organization faces challenges in developing a comprehensive and data-driven understanding of target science and mathematics teachers across regions. Existing data on teacher demographics, qualifications, years of experience, and subject specializations are often fragmented or not systemically analyzed. 
+
+How might we develop an integrated data system that enables the generation of accurate regional profiles of science and mathematics teachers, identifies underserved areas, and produces actionable insights that will inform more strategic targeting, design, and delivery of STAR capacity-building programs?
+
+## Solution 
+The generational and socioeconomic divide in technological literacy significantly hinders the transition from paper-based records to digital infrastructure. This is especially true in underserved communities, where limited access to modern hardware, a lack of high-speed internet, and a steep learning curve of complex software leave educators reliant on fragmented data that is incompatible with modern analytical methods. To bridge this gap, STAR S.H.I.P. (STAR SMS Hub for Information Processing) introduces an SMS Data Collection System that uses Natural Language Processing (NLP). 
+
+By integrating Large Language Models (LLMs) into a traditional communication channel (SMS Gateways), STAR S.H.I.P. allows shareholders to build comprehensive digital profiles using a hybrid of keyword-driven commands and conversational text inputs. The created system prototype uses httpSMS as the SMS gateway/aggregator, directed into a FastAPI backend framework using Python, where the LLMs clean and structure the data, before then inserting it into a SQLite database. Enhanced with a vector database for Retrieval-Augmented Generation (RAG), the system acts as an SMS-based chatbot capable of answering complex but related inquiries. Furthermore, the database system uses PostgreSQL with the pgvector library that enables Retrieval-Augmented Generation for querying profiles. Overall, STAR S.H.I.P aims to empower and address a complex system of connections through a data-driven framework supporting educators from all across the nation, ensuring a future where every teacher is just one SMS away.
